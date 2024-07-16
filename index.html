@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기 소개서</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+            background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fnamu.wiki%2Fw%2F%25EC%2595%2584%25ED%258B%25B0%25EC%258A%25A4%25ED%258A%25B8%2528%25EB%25B3%2584%25EC%259D%2598%2520%25EC%25BB%25A4%25EB%25B9%2584%2520%25EC%258B%259C%25EB%25A6%25AC%25EC%25A6%2588%2529&psig=AOvVaw3RC94kBCJb-hmPsVR8FukD&ust=1721177889580000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCJDun7etqocDFQAAAAAdAAAAABAE);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        h1 {
+            color: #000000;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .section-content {
+            display: none;
+            margin: 10px 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .section-button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #0056b3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .section-button:hover {
+            background-color: #003d7a;
+        }
+    </style>
+</head>
+<body>
+    <h1>자기 소개서</h1>
+    
+    <button class="section-button" onclick="toggleSection('personal-info')">개인 정보 보기</button>
+    <div id="personal-info" class="section-content">
+        <p><strong>이름:</strong> 윤성현</p>
+        <p><strong>성별:</strong> 남자</p>
+    </div>
+    
+    <button class="section-button" onclick="toggleSection('education')">학력 보기</button>
+    <div id="education" class="section-content">
+        <ul>
+            <li>평산초등학교 졸업</li>
+            <li>삼성현중학교 졸업</li>
+            <li>사동고등학교 2학년 재학 중</li>
+        </ul>
+    </div>
+    
+    <button class="section-button" onclick="toggleSection('major-goal')">전공 및 목표 보기</button>
+    <div id="major-goal" class="section-content">
+        <p>현재 디자인 분야에 큰 관심을 가지고 있으며, 이와 관련된 전공을 깊이 있게 배우고 싶습니다. 제 목표는 한양대학교의 융합 디자인부 또는 주얼리 패션 디자인 분야에서 학문적 성취를 이루는 것입니다. 이를 통해 디자인의 다양한 분야에서 전문성을 갖추고, 창의적인 작업을 통해 사회에 기여하고자 합니다.</p>
+    </div>
+    
+    <button class="section-button" onclick="toggleSection('academy')">학원 보기</button>
+    <div id="academy" class="section-content">
+        <p>현재 신매역에 위치한 '오늘 미술 학원'에서 디자인 및 미술에 대한 교육을 받고 있습니다. 이 학원에서의 수업은 제 디자인 감각을 키우는 데 많은 도움이 되고 있습니다.</p>
+    </div>
+    
+    <button class="section-button" onclick="toggleSection('mbti')">MBTI 보기</button>
+    <div id="mbti" class="section-content">
+        <p>저는 INFJ 유형으로, 사람들과의 깊은 관계와 내면의 성찰을 중요시하며, 창의적이고 혁신적인 사고를 지향합니다. 이러한 성향은 디자인 분야에서 제 창의력을 발휘하는 데 유리하다고 생각합니다.</p>
+    </div>
+    
+    <button class="section-button" onclick="toggleSection('contact')">연락처 보기</button>
+    <div id="contact" class="section-content">
+        <p>전화번호: 010-2935-3376</p>
+    </div>
+    
+    <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
